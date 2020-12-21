@@ -7,3 +7,6 @@ module ProductsHelper
     result.html_safe
   end
 end
+
+# tags.map(&:name)  =  tags.map{|e| e.name}
+

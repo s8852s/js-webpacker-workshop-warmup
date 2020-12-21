@@ -24,6 +24,7 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
+    # debugger
     @product = Product.new(product_params)
 
     respond_to do |format|
@@ -72,3 +73,7 @@ class ProductsController < ApplicationController
       params.require(:product).permit(:name, :money, :currency, :start_at, :end_at, tag_list: [])
     end
 end
+
+
+
+# { tag_list: []} = { :tag_list => []}

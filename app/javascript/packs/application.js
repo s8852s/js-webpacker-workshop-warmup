@@ -7,6 +7,7 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+
 require("bootstrap")
 import "../stylesheets/application";
 document.addEventListener("turbolinks:load", function() {
@@ -15,6 +16,22 @@ document.addEventListener("turbolinks:load", function() {
         $('[data-toggle="popover"]').popover()
     })
 })
+
+import $ from 'jquery'
+window.$ = $
+
+
+import 'select2'
+import 'select2/dist/css/select2.css'
+
+// ES6 Modules or TypeScript
+import Swal from 'sweetalert2'
+window.Swal = Swal
+
+import 'tempusdominus-bootstrap-4'
+import 'tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.css'
+import 'font-awesome/css/font-awesome.css'
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

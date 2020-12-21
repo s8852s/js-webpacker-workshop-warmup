@@ -9,6 +9,8 @@ environment.plugins.prepend(
       jquery: 'jquery',
       'window.jQuery': 'jquery',
       Popper: ['popper.js', 'default'],
+      moment: 'moment',
+      datepicker: 'bootstrap-datepicker/js/bootstrap-datepicker.js'
     })
 )
 
